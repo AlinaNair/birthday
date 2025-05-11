@@ -8,19 +8,19 @@ const Gallery = () => {
   // Example photos (replace with actual photos of you and Alina)
   const photos = [
     {
-      url: '/photos/IMG-20240302-WA0017.jpg',
+      url: '/birthday/photos/IMG-20240302-WA0017.jpg',
       caption: 'Your cutu baby pic(awww my love)❤️',
     },
     {
-      url: '/photos/IMG-20231221-WA0000.jpg',
+      url: '/birthday/photos/IMG-20231221-WA0000.jpg',
       caption: 'Making silly faces together',
     },
     {
-      url: '/photos/Snapchat-1427700348.mp4',
+      url: '/birthday/photos/Snapchat-1427700348.mp4',
       caption: 'That beautiful Face I fell in love with',
     },
     {
-      url: '/photos/VID_20250510_111040_045.mp4',
+      url: '/birthday/photos/VID_20250510_111040_045.mp4',
       caption: 'Your smile that lights up my world',
     }
   ]
