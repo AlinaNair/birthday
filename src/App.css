@@ -1,0 +1,90 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.heart-shape {
+  background-color: #ec4899;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart-shape:before,
+.heart-shape:after {
+  background-color: #ec4899;
+  border-radius: 50%;
+  content: "";
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart-shape:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart-shape:after {
+  left: 15px;
+  top: 0;
+}
+
+.texture-paper {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.paper-curl {
+  position: relative;
+}
+
+.paper-curl::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent rgba(255,255,255,0.3) transparent;
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.paper-curl:hover::after {
+  border-width: 0 0 40px 40px;
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.875rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+}
