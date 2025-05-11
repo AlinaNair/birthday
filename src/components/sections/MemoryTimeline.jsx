@@ -22,7 +22,7 @@ const MemoryTimeline = () => {
     {
       date: "Few months ago",
       title: "We broke up",
-      description: "Because of my god damn nonsense we just broke up and I know I hurted you deeply because of my actions—I cheated and broke your heart. It was my biggest mistake, But you chose to give me another chance, and for that, I’m beyond grateful. I promise to be better, to stay loyal, and to never take your love for granted again"
+      description: "Because of my god damn nonsense we just broke up and I know I hurted you deeply because of my actions and broke your heart. It was my biggest mistake, But you chose to give me another chance, and for that, I’m beyond grateful. I promise to be better, to stay loyal, and to never take your love for granted again"
     },
     {
       date: "Today",
